@@ -1,0 +1,15 @@
+<main>
+    <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+info.code+'.png'">
+    <div class="info">
+        <div class="title start">{{info.code | Code}}</div>
+        <div class="title end name">{{info.name}}</div>
+        <div class="infos start">Type</div>
+        <div class="infos end">
+            <app-badge [type]="t.type.name" *ngFor="let t of info.types"/>
+        </div>
+        <div class="infos start">Height</div>
+        <div class="infos end">{{info.height | height}}</div>
+        <div class="infos start">Weight</div>
+        <div class="infos end">{{info.weigth | weight}}</div>
+    </div>
+</main>

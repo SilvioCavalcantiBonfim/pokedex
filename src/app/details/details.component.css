@@ -1,0 +1,70 @@
+main {
+    width: 100vw;
+    height: 100%;
+    background: #8fe3fd url('../../assets/background-detalhes.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+    .info{
+        position:initial !important;
+        margin-bottom: 10px;
+
+    }
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    height: 200px;
+    background-color: transparent;
+}
+.info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #FFF;
+    background-color: #31789b;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.infos {
+    font-weight: lighter;
+}
+
+.start {
+    justify-self: start;
+}
+
+.end {
+    justify-self: end;
+}
+
+.pokedex {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+}

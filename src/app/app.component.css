@@ -1,0 +1,86 @@
+.pokedex {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 75px 1fr 17px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.pokemon_board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+.navegation {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navegation button {
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .1s linear;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegation button:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.top-bar {
+    height: 75px;
+    width: 100vw;
+    display: flex;
+}
+
+.top-bar-start {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.top-bar-middle {
+    flex: 1;
+    height: 75px;
+    background-image: url('/assets/top-meddle.png');
+    background-size: contain;
+}
+
+.top-bar-end {
+    height: 75px;
+    background-color: #8fe3fd;
+}
+
+.bottom-bar {
+    width: 100vw;
+    height: 17px;
+    display: flex;
+}
+
+.bottom-bar-start {
+    flex: 1;
+    height: 100%;
+    background-image: url("/assets/bottom-start.png");
+    background-size: contain;
+}
+
+.bottom-bar-end {
+    height: 100%;
+}

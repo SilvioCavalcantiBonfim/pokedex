@@ -1,0 +1,11 @@
+<div class="mini" [style]="background" (click)="onclick()">
+    <div class="loadingio-spinner-rolling-4lfncu6qhvu" *ngIf="currentColor === ''">
+        <div class="ldio-4ambvrknd4u">
+            <div></div>
+        </div>
+    </div>
+
+    <img *ngIf="currentColor !== ''" [style]="'display: '+(currentColor === '')?'none':'initial'"
+        [src]="['https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+code+'.png']"
+        [alt]="name" [title]="name" />
+</div>
