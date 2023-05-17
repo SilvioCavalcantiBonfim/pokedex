@@ -1,5 +1,5 @@
 {
-    "project": "Asteroids",
-    "frameworks": ["createreactapp"],
-    "description": "Sistema em javascript baseado no jogo asteroids."
+    "project": "Pokedex",
+    "frameworks": ["angular", "graphql", "apollographql"],
+    "description": "Projeto em angular desenvolvido para estudar API GraphQL."
 }
